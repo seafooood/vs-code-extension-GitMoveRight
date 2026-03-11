@@ -1,0 +1,58 @@
+{
+  "name": "gitmoveright",
+  "displayName": "GitMoveRight",
+  "description": "Automatically uses git mv when moving files in the Explorer, preserving Git history",
+  "version": "0.0.1",
+  "publisher": "gitmoveright",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seafooood/vs-code-extension-GitMoveRight"
+  },
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["SCM Providers"],
+  "activationEvents": ["workspaceContains:.git"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "gitmoveright.moveWithGit",
+        "title": "Move with Git..."
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "gitmoveright.moveWithGit",
+          "when": "gitOpenRepositoryCount > 0 && !explorerResourceIsFolder && resourceScheme == file",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "GitMoveRight",
+      "properties": {
+        "gitmoveright.autoIntercept": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically intercept drag-and-drop moves and use git mv"
+        },
+        "gitmoveright.showNotifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show a notification when git mv is used"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.0.0",
+    "@vscode/vsce": "^2.0.0"
+  }
+}
