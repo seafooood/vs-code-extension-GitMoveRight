@@ -3,7 +3,7 @@
   "displayName": "GitMoveRight",
   "description": "Automatically uses git mv when moving files in the Explorer, preserving Git history",
   "version": "0.0.1",
-  "publisher": "gitmoveright",
+  "publisher": "AndrewSeaford",
   "repository": {
     "type": "git",
     "url": "https://github.com/seafooood/vs-code-extension-GitMoveRight"

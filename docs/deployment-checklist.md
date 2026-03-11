@@ -13,11 +13,11 @@ Steps to publish GitMoveRight to GitHub and the VS Code Marketplace.
   *.vsix
   ```
 - [x] Add a `LICENSE` file to the project root (MIT is standard for VS Code extensions — the Marketplace will warn without one)
-- [ ] Add the repository URL to `package.json` once the GitHub repo is created:
+- [x] Add the repository URL to `package.json` once the GitHub repo is created:
   ```json
   "repository": {
     "type": "git",
-    "url": "https://github.com/<your-username>/gitmoveright"
+    "url": "https://github.com/seafooood/vs-code-extension-GitMoveRight"
   }
   ```
 
@@ -25,27 +25,27 @@ Steps to publish GitMoveRight to GitHub and the VS Code Marketplace.
 
 ## 2. Push to GitHub
 
-- [ ] Go to [https://github.com/new](https://github.com/new) and create a new **public** repository named `gitmoveright`
-- [ ] Do not initialise it with a README, .gitignore, or licence (the project already has these)
-- [ ] In the project folder, run:
+- [x] Go to [https://github.com/new](https://github.com/new) and create a new **public** repository named `gitmoveright`
+- [x] Do not initialise it with a README, .gitignore, or licence (the project already has these)
+- [x] In the project folder, run:
   ```bash
   git init
   git add .
   git commit -m "Initial commit"
-  git remote add origin https://github.com/<your-username>/gitmoveright.git
+  git remote add origin https://github.com/seafooood/vs-code-extension-GitMoveRight.git
   git branch -M main
   git push -u origin main
   ```
-- [ ] Verify the repo is visible at `https://github.com/<your-username>/gitmoveright`
+- [x] Verify the repo is visible at `https://github.com/seafooood/vs-code-extension-GitMoveRight`
 
 ---
 
 ## 3. Create a VS Code Marketplace Publisher
 
-- [ ] Sign in at [https://marketplace.visualstudio.com/manage](https://marketplace.visualstudio.com/manage) with a Microsoft account
-- [ ] Click **Create publisher**
-- [ ] Choose a publisher ID (e.g. `andrewseaford`) — this is permanent and will form part of your extension's unique ID
-- [ ] Update the `publisher` field in `package.json` to match your chosen publisher ID
+- [x] Sign in at [https://marketplace.visualstudio.com/manage](https://marketplace.visualstudio.com/manage) with a Microsoft account
+- [x] Click **Create publisher**
+- [x] Choose a publisher ID (e.g. `andrewseaford`) — this is permanent and will form part of your extension's unique ID
+- [x] Update the `publisher` field in `package.json` to match your chosen publisher ID (`AndrewSeaford`)
 
 ---
 
