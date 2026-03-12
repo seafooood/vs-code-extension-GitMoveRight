@@ -1,0 +1,13 @@
+{
+    "window.title": "GitMoveRight - ${rootName}",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#553366",
+        "titleBar.activeForeground": "#ffffff",
+        "titleBar.inactiveBackground": "#553366",
+        "titleBar.inactiveForeground": "#cccccc",
+        "statusBar.background": "#553366",
+        "statusBar.foreground": "#ffffff",
+        "activityBar.border": "#553366",
+        "sideBar.border": "#553366"
+    }
+}
