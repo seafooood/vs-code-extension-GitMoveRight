@@ -62,4 +62,7 @@ Open **Settings** (`Ctrl+,`) and search for `GitMoveRight`.
 
 ## Author
 
-- Developed by Andrew Seaford [http://www.andrew-seaford.co.uk](http://www.andrew-seaford.co.uk)
+- Extension developed by Andrew Seaford
+  - Website:[http://www.andrew-seaford.co.uk](http://www.andrew-seaford.co.uk)
+  - LinkedIn:[https://www.linkedin.com/in/andrewseaford/](www.linkedin.com/in/andrewseaford)
+  - GitHub:[https://github.com/seafooood/vs-code-extension-GitMoveRight](hhttps://github.com/seafooood/vs-code-extension-GitMoveRight)
