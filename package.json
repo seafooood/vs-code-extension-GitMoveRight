@@ -2,12 +2,13 @@
   "name": "gitmoveright",
   "displayName": "GitMoveRight",
   "description": "Automatically uses git mv when moving files in the Explorer, preserving Git history",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "publisher": "AndrewSeaford",
   "repository": {
     "type": "git",
     "url": "https://github.com/seafooood/vs-code-extension-GitMoveRight"
   },
+  "icon": "icon.png",
   "engines": { "vscode": "^1.80.0" },
   "categories": ["SCM Providers"],
   "activationEvents": ["workspaceContains:.git"],
